@@ -67,6 +67,77 @@
         }
 
 
+         /* Mobile menu animation */
+        .mobile-menu {
+            transition: all 0.3s ease;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .hero-content {
+                padding-top: 2rem;
+                text-align: center;
+            }
+            
+            .search-fields {
+                flex-direction: column;
+            }
+            
+            .property-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .neighborhood-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .testimonial-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+        }
+
+        @media (min-width: 769px) and (max-width: 1024px) {
+            .property-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .neighborhood-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .testimonial-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .footer-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (min-width: 1025px) {
+            .property-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+            
+            .neighborhood-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
+            
+            .testimonial-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+            
+            .footer-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+
+
 
     </style>
 </head>
@@ -578,3 +649,4 @@
     </script>
 </body>
 </html>
+
