@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -594,3 +595,160 @@
 
 
 
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elite Realty - Find Your Dream Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom animation for hero */
+        .fade-in {
+            animation: fadeIn 2s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        /* Responsive adjustments */
+        @media (max-width: 640px) {
+            .hero-title { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body class="bg-gray-100 font-sans">
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-blue-600">Elite Realty</div>
+            <ul class="hidden md:flex space-x-6">
+                <li><a href="#home" class="hover:text-blue-600">Home</a></li>
+                <li><a href="#properties" class="hover:text-blue-600">Properties</a></li>
+                <li><a href="#about" class="hover:text-blue-600">About</a></li>
+                <li><a href="#contact" class="hover:text-blue-600">Contact</a></li>
+            </ul>
+            <!-- Mobile menu toggle -->
+            <button class="md:hidden" id="menu-toggle">Menu</button>
+        </nav>
+        <div class="md:hidden bg-white hidden" id="mobile-menu">
+            <ul class="py-4 space-y-2">
+                <li><a href="#home" class="block px-4 py-2 hover:bg-gray-100">Home</a></li>
+                <li><a href="#properties" class="block px-4 py-2 hover:bg-gray-100">Properties</a></li>
+                <li><a href="#about" class="block px-4 py-2 hover:bg-gray-100">About</a></li>
+                <li><a href="#contact" class="block px-4 py-2 hover:bg-gray-100">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative bg-cover bg-center h-screen flex items-center justify-center text-white fade-in" style="background-image: url('https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/38644703-1e66-4b24-8c88-cd1d195a9a9c.png');">
+        <div class="bg-black bg-opacity-50 p-8 rounded-lg text-center max-w-lg mx-4">
+            <h1 class="hero-title text-4xl md:text-5xl font-bold mb-4">Find Your Dream Home Today</h1>
+            <p class="text-lg md:text-xl mb-6">Explore exquisite properties in prime locations with expert guidance.</p>
+            <form class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 justify-center">
+                <input type="search" placeholder="Enter location..." class="px-4 py-2 rounded-md text-black w-full md:w-64">
+                <select class="px-4 py-2 rounded-md text-black w-full md:w-32">
+                    <option>Buy</option>
+                    <option>Rent</option>
+                </select>
+                <button type="submit" class="bg-blue-600 hover:bg-blue-700 px-6 py-2 rounded-md transition">Search</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Properties Section -->
+    <section id="properties" class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-8">Featured Properties</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Property 1 -->
+                <div class="bg-gray-50 p-4 rounded-lg shadow-md">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/bf031c3e-3be8-48d4-942e-6c4d1e3dc324.png" alt="Elegant suburban house with a large front lawn, brick exterior, and modern arched windows in a family-friendly neighborhood" class="w-full h-48 object-cover rounded mb-4" onerror="this.onerror=null; this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgdmlld0JveD0iMCAwIDQwMCAzMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik0yMDAgMTUwIEwxMDAgNT AgTCAzMDAgNTAgTFI0MDAgMTUwIEwyMDAgMjUwIEMyMDAgMjUwIDIwMCAyNDAgMTUwIDIyNSBMNDAgMTUwIiBmaWxsPSIjY2NjY2NjIiBzdHJva2U9IiMwMDAwMDAiIHN0cm9rZS13aWR0aD0iNCIvPgo8L3N2Zz4='; this.alt='Error loading image';">
+                    <h3 class="text-xl font-semibold">Luxury Villa</h3>
+                    <p class="text-gray-600">4 Beds • 3 Baths • 2,500 sq ft</p>
+                    <p class="text-blue-600 font-bold mt-2">$750,000</p>
+                    <button class="mt-4 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">View Details</button>
+                </div>
+                <!-- Property 2 -->
+                <div class="bg-gray-50 p-4 rounded-lg shadow-md">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/7e6fa52f-f622-45bc-b543-32f0e18d9689.png" alt="Modern apartment building with glass facade, rooftop deck, and city skyline view in a bustling urban district" class="w-full h-48 object-cover rounded mb-4" onerror="this.onerror=null; this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgdmlld0JveD0iMCAwIDQwMCAzMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik0yMDAgMTUwIEwxMDAgNTAgTCAzMDAgNTAgTFI0MDAgMTUwIEwyMDAgMjUwIEMyMDAgMjUwIDIwMCAyNDAgMTUwIDIyNSBMNDAgMTUwIiBmaWxsPSIjY2NjY2NjIiBzdHJva2U9IiMwMDAwMDAiIHN0cm9rZS13aWR0aD0iNCIvPgo8L3N2ZyI+'; this.alt='Error loading image';">
+                    <h3 class="text-xl font-semibold">Urban Apartment</h3>
+                    <p class="text-gray-600">2 Beds • 1 Bath • 1,200 sq ft</p>
+                    <p class="text-blue-600 font-bold mt-2">$450,000</p>
+                    <button class="mt-4 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">View Details</button>
+                </div>
+                <!-- Property 3 -->
+                <div class="bg-gray-50 p-4 rounded-lg shadow-md">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/6e850cfc-8e14-4c2e-a014-9a4b5fe61b6f.png" alt="Spacious family home with garden, parked car in driveway, and warm lighting in suburban area" class="w-full h-48 object-cover rounded mb-4" onerror="this.onerror=null; this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgdmlld0JveD0iMCAwIDQwMCAzMDAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik0yMDAgMTUwIEwxMDAgNTAgTCAzMDAgNTAgTFI0MDAgMTUwIEwyMDAgMjUwIEMyMDAgMjUwIDIwMCAyNDAgMTUwIDIyNSBMNDAgMTUwIiBmaWxsPSIjY2NjY2NjIiBzdHJva2U9IiMwMDAwMDAiIHN0cm9rZS13aWR0aD0iNCIvPgo8L3N2ZyI+'; this.alt='Error loading image';">
+                    <h3 class="text-xl font-semibold">Family Home</h3>
+                    <p class="text-gray-600">3 Beds • 2 Baths • 1,800 sq ft</p>
+                    <p class="text-blue-600 font-bold mt-2">$600,000</p>
+                    <button class="mt-4 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">View Details</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-12 bg-gray-200">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-4">About Elite Realty</h2>
+            <p class="text-lg max-w-2xl mx-auto">We specialize in connecting buyers and sellers with premium real estate opportunities. Our team of experienced agents ensures a seamless experience tailored to your needs, whether you're buying your first home or investing in luxury properties.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-8">Contact Us</h2>
+            <div class="max-w-lg mx-auto">
+                <form class="space-y-4">
+                    <input type="text" placeholder="Your Name" class="w-full px-4 py-2 border rounded">
+                    <input type="email" placeholder="Your Email" class="w-full px-4 py-2 border rounded">
+                    <textarea placeholder="Your Message" rows="4" class="w-full px-4 py-2 border rounded"></textarea>
+                    <button type="submit" class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p>© 2023 Elite Realty. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Mobile Menu and Interaction -->
+    <script>
+        const menuToggle = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Simple form submission alert
+        document.querySelector('#contact form').addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Thank you for your message! We\'ll get back to you soon.');
+            e.target.reset();
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+</content>
+</create_file>
+>>>>>>> 40cfc18 (Updated UI + Dark Mode + Responsiveness)

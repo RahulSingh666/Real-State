@@ -1,0 +1,53 @@
+.container{
+    border: 3px solid rgb(7, 245, 75);
+    background-color: red;
+    height: 214px;
+    width: px;
+    display: flex;
+}
+.box{
+    height: 212px;
+    width: 212px;
+    margin: 0px;
+    border: 2px solid green;
+    background-color: aqua;
+    /* --dark-red: #981a2c; */
+    /* color: var(--dark-red); */
+    animation-name: rahul;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-delay: 1s;
+    /* animation-direction: alternate; */
+    animation-fill-mode: forwards;
+ }
+
+  @keyframes rahul{
+    0%{
+       width: 212%;   
+       background-color: aqua;
+    }
+    30%{
+         width: 365%;
+            background-color: blue;
+    }
+    65%{
+        width: 70%;
+        background-color: yellow;
+    }
+    100%{
+        width: 100%;
+        background-color: green;
+    }
+ }
+
+ @keyframes rahul {
+    from{
+      width: 212px;
+
+    }
+    to{
+      width: 800px;
+    }
+ }
+    

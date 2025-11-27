@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Resume</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #3d3b3b;
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+        h1 {
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+            margin-bottom: 5px;
+        }
+        h2 {
+            background-color: #f8f9fa;
+            padding: 8px;
+            margin: 20px 0 10px 0;
+            border-left: 4px solid #3498db;
+        }
+        .contact-info {
+            margin-bottom: 20px;
+              max-width: 800px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .contact-info div {
+            margin: 5px 0;
+        }
+        .job, .project, .education {
+            margin-bottom: 15px;
+        }
+        .job-title, .project-title, .degree {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .company, .school {
+            font-weight: bold;
+        }
+        .date {
+            color: #7f8c8d;
+            font-style: italic;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        .skill-category {
+            flex: 1;
+            min-width: 200px;
+        }
+        .skill-category h3 {
+            margin-top: 0;
+            font-size: 16px;
+        }
+        @media print {
+            body {
+                font-size: 12px;
+                padding: 10px;
+            }
+            h2 {
+                page-break-after: avoid;
+            }
+            .job, .project {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Rahul Singh</h1>
+    <div class="contact-info">
+        <div>Email: rahulsunghrrr.com</div>
+            <div>Phone: (+91) 7052590763 </div>
+            <div>Location: Lucknow</div>
+            <div>LinkedIn: <a href="https://www.linkedin.com/in/rahul-singh-596a81269/" target="_blank">linkedin</a></div>
+            <div>GitHub:   <a href="https://github.com/RahulSingh666" target="_blank"> github</a></div>
+            <div>Portfolio: <a href="https://rahulsingh666.github.io/-PORTFOLIO/" target="_blank">Portfolio</a></div>
+    </div>
+
+    <h2>Professional Summary</h2>
+    <p>Competitive programmer and frontend developer with expertise in Data Structures and Algorithms. Passionate about solving complex problems and building responsive, accessible web applications. Top 5% on LeetCode with 500+ problems solved. Focused on writing clean, efficient, and maintainable code.</p>
+
+    <h2>Technical Skills</h2>
+    <div class="skills">
+        <div class="skill-category">
+            <h3>Languages</h3>
+            <ul>
+                <li>JavaScript (ES6+)</li>
+                <li>TypeScript</li>
+                <li>HTML5/CSS3</li>
+                <li>Python</li>
+                <li>C++</li>
+            </ul>
+        </div>
+        <div class="skill-category">
+            <h3>Frameworks/Libraries</h3>
+            <ul>
+                <li>React (1 projects)</li>
+                <li>Next.js (2 projects)</li>
+                <li>Redux</li>
+                <li>Node.js</li>
+                <li>Express</li>
+            </ul>
+        </div>
+        <div class="skill-category">
+            <h3>DSA & Competitive</h3>
+            <ul>
+                <li>Graph Algorithms</li>
+                <li>Dynamic Programming</li>
+                <li>Trees & Heaps</li>
+                <li>Greedy Algorithms</li>
+                <li>System Design</li>
+            </ul>
+        </div>
+       
+    </div>
+
+    <h2>Competitive Programming</h2>
+    <p>
+        Competitive Programming – Skilled in problem-solving under time constraints with expertise in algorithms, data structures, and optimization techniques. Proficient in writing efficient, clean, and scalable code to solve complex challenges across domains such as number theory, combinatorics, graph theory, and dynamic programming. Regular participant in coding platforms like Codeforces, LeetCode, and CodeChef, with a proven track record of achieving high ratings and solving diverse real-world inspired problems.
+    </p>
+
+    <h2>Projects</h2>
+    <div class="project">
+        <div class="project-title">Real State</div>
+       <p>
+        Developed “LUXE Properties,” a responsive real estate website using HTML, CSS, and JavaScript, featuring property listings, search filters, neighborhood highlights, and contact integration, hosted on GitHub Pages.
+       </p>
+    </div>
+
+    <h2>Education</h2>
+    <div class="education">
+         <div><span class="school">Institute Of Engineer And Technology .</span></div>
+        <div class="degree">Bachelor of Science in Computer Science</div>
+       
+        <div>GPA: 7.5/10.0 | Specialization in Algorithms & Complexity</div>
+    </div>
+
+   
+</body>
+</html>
